@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 750px;
+    background-image: url(../assets/header-bg.png);
+    background-repeat: no-repeat;
+}
+
+.container_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.conta {
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-conta {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+
+.logo-conta h1 {
+    font-family: 'Andada SC', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    box-shadow: 0px 9px 4px rgba(0, 0, 0, 0.25);
+}
+
+.logo-conta a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF
+}
+
+.perfil {
+    border-radius: 50%;
+    background: #0094FF;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.borda {
+    border-radius: 50%;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border: 2px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: #FBFBFB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    margin-top: 50px;
+}
+
+.links_div {
+    display: flex;
+    width: 325px;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #080808;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.input_pesquisa {
+    display: flex;
+}
+
+nav input {
+    text-align: center;
+    width: 260px;
+    height: 38px;
+    background: #0094FF;
+    border: 1px solid #0094FF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px 0 0 17px;
+}
+
+.input_pesquisa button {
+    border: none;
+    background-color: #0094FF;
+    height: 38px;
+    width: 40px;
+    border-radius: 0px 17px 17px 0px;
+    padding: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.input_pesquisa button:hover {
+    background-color: #0064FF;
+    transition: 1s;
+}
+
+nav input::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mensagem_login {
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    height: 140px;
+}
+
+.mensagem_login h1 {
+    width: 1200px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.mensagem_login span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 45px;
+    /* text-align: center; */
+    color: #006DC3;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sign_buttons_box {
+    width: 100%;
+    height: 97px;
+    display: flex;
+    justify-content: center;
+}
+
+.sign_buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 895px;
+}
+
+.sign_buttons a {
+    width: 355.64px;
+    height: 66px;
+}
+
+.sign_buttons .sign_in {
+    background: rgba(0, 148, 255, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 43px;
+    color: #FBFBFB;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.sign_buttons .sign_in:hover {
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+
+
+
+.sign_buttons .sign_up {
+    border: 4px solid #FBFBFB;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 43px;
+    color: #FBFBFB;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.sign_buttons .sign_up:hover {
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+
+
+hr {
+    height: 100%;
+    width: 3px;
+    background-color: whitesmoke;
+}
+
+main {
+    background-color: #FCFCFC;
+}
+
+.cards_container {
+    height: 455px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+
+.box_cards {
+    width: 100%;
+    height: 300px;
+    background: #C0E4FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box_cards article {
+    width: 212.12px;
+    height: 215.59px;
+    background: #0094FF;
+    border-radius: 15px;
+    filter: drop-shadow(10px 12px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre {
+    height: 828px;
+    background: url(../assets/background-sobre.png);
+}
+
+.box_sobre {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 450px;
+    flex-direction: column;
+}
+
+.box_sobre h1 {
+    font-family: 'Andada SC', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    margin-left: 50px
+}
+
+.box_sobre p {
+    width: 500px;
+    height: 475px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.contorno {
+    margin-top: 100px;
+    position: absolute;
+    border: 7px solid #00A1E2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 260px;
+    height: 260px;
+}
+
+.contorno_2 {
+    margin-top: 100px;
+    position: absolute;
+    border: 7px solid #00A1E2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 260px;
+    height: 260px;
+    margin-left: 21vw;
+}
+
+.contorno_3 {
+    margin-top: 100px;
+    position: absolute;
+    border: 7px solid #00A1E2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 260px;
+    height: 260px;
+    margin-left: 42vw;
+}
+
+.nome_clinica {
+    bottom: 70px;
+    left: 35px;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/imagem-clinica.png);
+}
+
+.nome_clinica hr {
+    width: 260px;
+    height: 0px;
+    border: 3px solid #FFFFFF;
+    border-radius: 2px;
+}
+
+.clínicas {
+    margin-top: 50px;
+}
+
+.clínicas h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 66px;
+}
+
+.nome_clinica span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    color: whitesmoke;
+    margin-top: 20px;
+}
+
+.line_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 360px;
+    margin-top: 50px;
+}
