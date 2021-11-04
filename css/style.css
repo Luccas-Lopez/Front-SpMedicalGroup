@@ -225,8 +225,6 @@ nav input::placeholder {
     transition: 0.5s;
 }
 
-
-
 .sign_buttons .sign_up {
     border: 4px solid #FBFBFB;
     box-sizing: border-box;
@@ -248,7 +246,6 @@ nav input::placeholder {
     transform: translateY(-8px);
     transition: 0.5s;
 }
-
 
 hr {
     height: 100%;
@@ -346,7 +343,7 @@ main {
     border-radius: 20px;
     width: 260px;
     height: 260px;
-    margin-left: 21vw;
+    margin-left: 25vw;
 }
 
 .contorno_3 {
@@ -357,7 +354,7 @@ main {
     border-radius: 20px;
     width: 260px;
     height: 260px;
-    margin-left: 42vw;
+    margin-left: 49vw;
 }
 
 .nome_clinica {
@@ -387,6 +384,7 @@ main {
 }
 
 .clínicas h1 {
+    margin-top: 100px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -407,5 +405,239 @@ main {
     justify-content: space-between;
     width: 1200px;
     height: 360px;
+    margin-top: 80px;
+}
+
+.duvidas {
+    margin-top: 150px;
+    height: 623px;
+    background: linear-gradient(269.38deg, #00A3E4 0.58%, #005C81 47.73%, #00A3E4 97.93%);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_duvidas {
+    width: 1590px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 80px;
+}
+
+.ilustracao {
+    width: 660px;
+    height: 430px;
+}
+
+.duvidas hr {
+    height: 542px;
+    border: 7px solid #FFFFFF;
+}
+
+.duvidas_frequentes {
+    display: flex;
+    flex-direction: column;
+    height: 395px;
+    justify-content: space-between;
+}
+
+.duvidas_frequentes button {
+    width: 45px;
+    height: 45px;
+    border: 3px solid #FFFFFF;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.duvidas_frequentes hr {
+    height: 6px;
+    width: 546px;
+    border: 3px solid #FFFFFF;
+}
+
+.duvidas_frequentes span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 38px;
+    color: whitesmoke;
+}
+
+.duvidas h1 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    /* margin-top: 50px; */
+    margin-bottom: 50px;
+}
+
+.duvidas_line {
+    display: flex;
+    width: 525px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.final_message {
     margin-top: 50px;
+    height: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container_message {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_message span {
+    text-align: center;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #006188;
+
+}
+
+footer {
+    min-height: 45vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: white;
+    overflow-x: hidden;
+}
+
+.footer {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    background-color: #3586FF;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .social_icon, .footer .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+}
+
+.footer .social_icon li, .footer .menu li {
+    list-style: none;
+}
+
+.footer .social_icon li a {
+    font-size: 2em;
+    color: whitesmoke;
+    margin: 10px 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.footer .social_icon li a:hover {
+    transform: translateY(-10px);
+}
+
+.footer .menu li a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color: whitesmoke;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75s;
+}
+
+.footer .menu li a:hover {
+    opacity: 1;
+    color: white;
+}
+
+.footer p {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+.footer .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../assets/wave.png);
+    background-size: 1000px 100px;
+}
+
+.footer .wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+.footer .wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave02 4s linear infinite;
+}
+
+.footer .wave#wave3 {
+    z-index: 998;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave02 3s linear infinite;
+}
+
+.footer .wave#wave5 {
+    z-index: 997;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave02 3s linear infinite;
+}
+
+@keyframes animateWave {
+    0% {
+        background-position-x: 1000px
+    }
+    100% {
+        background-position-x: 0;
+    }
+}
+
+@keyframes animateWave02 {
+    0% {
+        background-position-x: 0px
+    }
+    100% {
+        background-position-x: 1000px;
+    }
 }
