@@ -16,25 +16,33 @@
 
             </div>
             <div class="box_form">
-                <form>
+                <div class="container_form">
                     <h1>Login</h1>
-                    <label for="email">email</label>
-                    <input name="email" placeholder="Insiria um Email válido..." type="email">
-                    <label for="senha">senha</label>
-                    <input name="email" placeholder="Digite sua senha..." type="password">
-                    <button>logar</button>
-                    </fom>
-                    <div>
-                        <input name="conect" placeholder="Matenha-me conectado" type="checkbox">
-                        <label for="conect">Mantenha-me conectado</label>
+                    <form>
+                        <div class="inputs">
+                            <label for="email">email</label>
+                            <input name="email" placeholder="Insiria um Email válido..." type="email">
+                        </div>
+                        <div class="inputs">
+                            <label for="senha">senha</label>
+                            <input name="email" placeholder="Digite sua senha..." type="password">
+                        </div>
+                        <button>logar</button>
+                    </form>
+                    <div class="options_form">
+                        <div class="mark">
+                            <input name="conect" placeholder="Matenha-me conectado" type="checkbox">
+                            <label for="conect">Mantenha-me conectado</label>
+                        </div>
                         <a>Esqueceu sua senha?</a>
                     </div>
-                    <div>
+                    <div class="ou">
                         <hr>
                         <p>ou</p>
                         <hr>
                     </div>
-                    <button>Logar com o Google</button>
+                    <button class="login_google">Entrar com o Google<img src="assets/google.png"> </button>
+                </div>
             </div>
         </section>
     </main>
